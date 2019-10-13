@@ -19,7 +19,6 @@ var brickOffsetTop = 30;
 var brickOffsetLeft = 30;
 var score = 0;
 var lives = 3;
-var difficulty = ["Easy", "Medium", "Hard"];
 
 var bricks = [];
 for(var c=0; c<brickColumnCount; c++) {
@@ -113,13 +112,6 @@ function drawScore() {
   ctx.fillStyle = "#6CE57C";
   ctx.fillText("Score: "+score, 8, 20);
 }
-
-function drawDifficulty() {
-    ctx.font = "bold 16px Arial";
-    ctx.fillStyle = "#6CE57C";
-    ctx.fillText("Difficulty: "+difficulty[0], Math.floor(canvas.width/2) - 55, 20);
-  }
-  
 
 function drawLives() {
   ctx.font = "bold 16px Arial";
