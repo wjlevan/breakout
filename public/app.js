@@ -125,7 +125,7 @@ function draw() {
   drawBall();
   drawPaddle();
   drawScore();
-  drawDifficulty();
+  // drawDifficulty();
   drawLives();
   collisionDetection();
 
